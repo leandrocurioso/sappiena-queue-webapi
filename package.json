@@ -1,0 +1,32 @@
+{
+  "name": "sappiena-queue-webapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./boot.js",
+    "watch": "./node_modules/.bin/nodemon ./boot.js",
+    "docker:build": "docker build -t sappiena-queue-webapi .",
+    "docker:run": "docker run -p 8090:8090 -d sappiena-queue-webapi "
+  },
+  "dependencies": {
+    "brain.js": "1.6.1",
+    "bull": "3.6.0",
+    "bull-arena": "^2.5.3",
+    "chalk": "2.4.2",
+    "cors": "2.8.5",
+    "debug": "2.6.9",
+    "dotenv": "6.2.0",
+    "express": "4.16.0",
+    "express-basic-auth": "1.1.6",
+    "getenv": "0.7.0",
+    "joi": "14.3.1",
+    "mimir": "0.0.1",
+    "morgan": "1.9.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.2",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  }
+}
